@@ -1,0 +1,101 @@
+.custom-navbar,
+.navbar {
+  background-color: var(--navy) !important;
+  color: var(--lightest-slate);
+  font-family: "NTR", sans-serif;
+  padding: 0.65rem 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+
+.navbar-light .navbar-brand,
+.nav-brand-title {
+  color: var(--lightest-slate) !important;
+  font-size: 1.45rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.navbar-light .navbar-brand:hover,
+.nav-brand-title:hover {
+  color: var(--green-bright) !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--lightest-slate) !important;
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  padding: 0.45rem 0.85rem !important;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--green-bright) !important;
+  transform: translateY(-2px);
+}
+
+/* Icons section styling */
+.nav-icons-right {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nav-icons-right .nav-link {
+  padding: 0.4rem 0.55rem !important;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-icon {
+  transition: transform 0.2s ease, color 0.3s ease;
+  color: var(--lightest-slate);
+}
+
+.nav-icons-right .nav-link:hover .nav-icon {
+  color: var(--green-bright) !important;
+  transform: scale(1.15);
+}
+
+/* Mobile Responsiveness */
+.navbar-toggler {
+  border-color: var(--green-bright) !important;
+  outline: none !important;
+  padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(100, 255, 218, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .custom-navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-collapse {
+    background-color: var(--navy);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-brand-title {
+    font-size: 1.35rem !important;
+    display: inline-block !important;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.1rem !important;
+    padding: 0.55rem 0.5rem !important;
+  }
+
+  .nav-icons-right {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    justify-content: flex-start;
+  }
+}
